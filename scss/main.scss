@@ -117,7 +117,7 @@ main {
 // 	}
 // }
 
-//Work/Projects
+//Work Projects
 .projects {
 	display: grid;
 	grid-gap: 0.7rem;
@@ -131,6 +131,33 @@ main {
 			opacity: 0.5;
 			border-color: $secondary-color;
 			@include easeOut;
+		}
+	}
+}
+
+//Contact Page
+.boxes {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	align-items: center;
+	margin-top: 1rem;
+
+	div {
+		font-size: 1.6rem;
+		border: 1px #fff solid;
+		padding: 1.5rem 2.5rem;
+		margin-bottom: 1.5rem;
+		@include easeOut;
+
+		&:hover {
+			padding: 0.7rem 1.7rem;
+			background: $secondary-color;
+			color: set-text-color($secondary-color);
+
+			span {
+				color: set-text-color($secondary-color);
+			}
 		}
 	}
 }
